@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "FB Messenger Hotkeys",
+    "description": "Hotkeys for FB Messenger to avoid using the mouse",
+    "version": "1.0",
+    "icons": {
+        "128": "128.png"
+    },
+    "permissions": [
+        "*://www.messenger.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.messenger.com/*"],
+            "js": ["messenger.js"]
+        }
+    ]
+}
